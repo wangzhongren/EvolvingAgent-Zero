@@ -44,15 +44,22 @@
 - **持续进化 / Continuous Evolution**: Background fine-tuning every 20s using recent dialogues (5 LoRA steps)  
 - **模型替换机制 / Model Replacement**: Local preference evaluation → only better models replace the main one  
 
-```mermaid
-graph LR
-A[User Dialogue] --> B[Store in Vector DB + JSONL Log]
-B --> C{Timer Trigger<br/>(Every 20s)}
-C --> D[Fine-tune with New Dialogues<br/>(5-step LoRA)]
-D --> E[Generate New Model Version]
-E --> F[Local Evaluation]
-F -->|new_score > old_score| G[Replace Main Model]
-F -->|else| H[Discard New Model]
+```
+User Dialogue
+      ↓
+Store in Vector DB + JSONL Log
+      ↓
+Timer Trigger (Every 20s)
+      ↓
+Fine-tune with New Dialogues (5-step LoRA)
+      ↓
+Generate New Model Version
+      ↓
+Local Evaluation
+     ↙ ↘
+new_score > old_score? → Replace Main Model
+     ↘ ↙
+   Discard New Model
 ```
 
 ---
