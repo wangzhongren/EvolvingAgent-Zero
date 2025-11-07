@@ -1,0 +1,2 @@
+FROM phi3:mini
+ADAPTER ./models/latest_lora.safetensors
