@@ -1,24 +1,35 @@
+[![EvoBase Paper](https://zenodo.org/badge/DOI/10.5281/zenodo.17555914.svg)](https://doi.org/10.5281/zenodo.17555914)
 
+# EvolvingAgent-Zero
 
-# EvolvingAgent-Zero 🧠
+> **Official Implementation of EvoBase Framework**
 
-> **Official Prototype Implementation of the EvoBase Framework**
+**EvoBase Framework** 是核心理论范式（Wang, 2025）  
+**EvolvingAgent-Zero** 是其 **首个可运行原型**（1B 模型，每 20 秒自我进化）
 
-📄 **Original Paper**:  
-[EvoBase: Continuous Self-Evolution of On-Device LLMs via Vector Memory, VAMS, SQIA, and LoRA Replacement]([https://zenodo.org/records/XXXXXXX](https://zenodo.org/records/17549670))  
-✍️ **Wang, Zhongren**, 2025  
-🔗 **DOI**: `10.5281/zenodo.17549670` (replace with your actual DOI)
+| 组件 | EvoBase 理论 | EvolvingAgent-Zero 实现 |
+|------|---------------|--------------------------|
+| 记忆过滤 | VAMS: `Score = R × (0.4 + 0.3E + 0.3V)` | Chroma 向量存储 + 对话日志 |
+| 身份保护 | SQIA: `Drift > 0.15 → LoRA 修正` | 一致性评估（固定问题集） |
+| 模型替换 | LoRA Replacement | 每 20s 5-step LoRA + 偏好评分 |
 
+**引用原论文**：
 ```bibtex
 @misc{wang2025evobase,
   title = {{EvoBase}: Continuous Self-Evolution of On-Device LLMs via Vector Memory, {VAMS}, {SQIA}, and {LoRA} Replacement},
   author = {Wang, Zhongren},
   year = {2025},
   month = {nov},
-  howpublished = {\url{https://zenodo.org/records/XXXXXXX}},
-  note = {Assisted by ChatGPT and Grok}
+  howpublished = {\url{https://doi.org/10.5281/zenodo.17555914}},
+  note = {Assisted by ChatGPT and Grok. Full 4-page PDF in repository docs/ or future Zenodo update}
 }
+Paper & DOI: https://doi.org/10.5281/zenodo.17555914
+Code: github.com/wangzhongren/EvolvingAgent-Zero
+Full EvoBase PDF: docs/EvoBase_Framework.pdf (upload your 4-page PDF here)
 ```
+
+
+
 > **让 1B 本地模型进行真正的「终身学习」**  
 > **Enable true "lifelong learning" for a 1B local model**  
 >  
