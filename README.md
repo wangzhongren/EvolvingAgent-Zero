@@ -18,7 +18,7 @@
   howpublished = {\url{https://zenodo.org/records/XXXXXXX}},
   note = {Assisted by ChatGPT and Grok}
 }
-
+```
 > **让 1B 本地模型进行真正的「终身学习」**  
 > **Enable true "lifelong learning" for a 1B local model**  
 >  
