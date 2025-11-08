@@ -1,5 +1,23 @@
-# 🧠 EvolvingAgent-Cloud  
-## Not Scaling, But Evolving  
+
+
+# EvolvingAgent-Zero 🧠
+
+> **Official Prototype Implementation of the EvoBase Framework**
+
+📄 **Original Paper**:  
+[EvoBase: Continuous Self-Evolution of On-Device LLMs via Vector Memory, VAMS, SQIA, and LoRA Replacement]([https://zenodo.org/records/XXXXXXX](https://zenodo.org/records/17549670))  
+✍️ **Wang, Zhongren**, 2025  
+🔗 **DOI**: `10.5281/zenodo.XXXXXXX` (replace with your actual DOI)
+
+```bibtex
+@misc{wang2025evobase,
+  title = {{EvoBase}: Continuous Self-Evolution of On-Device LLMs via Vector Memory, {VAMS}, {SQIA}, and {LoRA} Replacement},
+  author = {Wang, Zhongren},
+  year = {2025},
+  month = {nov},
+  howpublished = {\url{https://zenodo.org/records/XXXXXXX}},
+  note = {Assisted by ChatGPT and Grok}
+}
 
 > **让 1B 本地模型进行真正的「终身学习」**  
 > **Enable true "lifelong learning" for a 1B local model**  
