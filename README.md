@@ -7,7 +7,7 @@
 📄 **Original Paper**:  
 [EvoBase: Continuous Self-Evolution of On-Device LLMs via Vector Memory, VAMS, SQIA, and LoRA Replacement]([https://zenodo.org/records/XXXXXXX](https://zenodo.org/records/17549670))  
 ✍️ **Wang, Zhongren**, 2025  
-🔗 **DOI**: `10.5281/zenodo.XXXXXXX` (replace with your actual DOI)
+🔗 **DOI**: `10.5281/zenodo.17549670` (replace with your actual DOI)
 
 ```bibtex
 @misc{wang2025evobase,
